@@ -33,7 +33,7 @@ const SignUpView = () => {
   }
 
   return (
-    <div className="flex justify-center items-center h-[80vh]">
+    <div className="flex justify-center items-center h-screen">
       <div className="w-full max-w-md p-8 space-y-6 bg-base rounded-lg">
         <div className="flex flex-col gap-2 text-center">
           <h1 className="text-2xl font-bold">Buat Akun</h1>
