@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="sm:hidden fixed w-full bottom-0 bg-base-100 flex items-center justify-center">
       <div className="container px-6 py-3">
-        <div className="grid grid-cols-3 gap-2 text-center">
+        <div className={`grid  ${authUser ? "grid-cols-3" : "grid-cols-2"} gap-2 text-center`}>
           {authUser && (
             <Link to="/profile" className={`btn btn-sm btn-neutral gap-2 transition-colors py-4`}>
               <User className="w-5 h-5 text-accent" />
