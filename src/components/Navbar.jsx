@@ -8,7 +8,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useThemeStore();
   return (
     <nav className="sm:hidden fixed w-full bottom-0 bg-base-100 flex items-center justify-center">
-      <div className="container px-6 py-3">
+      <div className="container px-6 pt-3 pb-4">
         <div className={`grid  ${authUser ? "grid-cols-3" : "grid-cols-2"} gap-2 text-center`}>
           {authUser && (
             <Link to="/profile" className={`btn btn-sm btn-neutral gap-2 transition-colors py-4`}>
