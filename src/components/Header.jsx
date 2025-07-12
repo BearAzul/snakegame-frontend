@@ -8,7 +8,7 @@ const Header = () => {
   const { theme, toggleTheme } = useThemeStore()
 
   return (
-    <header className="bg-base-100 sticky top-0 z-50">
+    <header className="bg-base-300 fixed top-0 z-50 w-full">
       <div className="container mx-auto px-4">
         <div className="navbar min-h-16">
           <div className="flex-1">

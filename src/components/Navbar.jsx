@@ -7,7 +7,7 @@ const Navbar = () => {
   const { authUser } = useAuthStore()
   const { theme, toggleTheme } = useThemeStore();
   return (
-    <nav className="sm:hidden fixed w-full bottom-0 bg-base-100 flex items-center justify-center">
+    <nav className="sm:hidden fixed w-full bottom-0 bg-base-300 flex items-center justify-center">
       <div className="container px-6 pt-3 pb-4">
         <div className={`grid  ${authUser ? "grid-cols-3" : "grid-cols-2"} gap-2 text-center`}>
           {authUser && (

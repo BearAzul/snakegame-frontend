@@ -24,22 +24,22 @@ const HomeView = () => {
   const {
     snake, food, score, isGameOver, isPaused,
     handleDirectionChange, togglePause, resetGame,
-  } = useSnakeLogic();
+  } = useSnakeLogic(); 
 
   if (isBestScoreLoading) {
     return (
-      <div className="flex items-center justify-center h-[90vh]">
+      <div className="flex items-center justify-center h-screen bg-base-300">
         <LoaderCircle className="size-10 animate-spin" />
       </div>
     );
   }
 
   return (
-    <section className="h-screen p-6 lg:pt-0">
-      <div className="container mx-auto bg-base max-w-md">
+    <section className="h-screen p-6 pt-22 lg:pt-18 2xl:pt-22 bg-base-300">
+      <div className="container mx-auto max-w-md">
         <div className="flex items-center justify-between px-1">
-          <h1 className="font-medium">Score: {score} Point</h1>
-          <h1 className="font-medium">Best Scores: {bestScore} Point</h1>
+          <h1 className="font-medium">Score: {score}</h1>
+          <h1 className="font-medium">Best Scores: {bestScore}</h1>
         </div>
         <div className="flex flex-col items-center gap-3 mt-2">
           <div className="bg-base-200 w-full aspect-square">

@@ -14,18 +14,18 @@ export default defineConfig({
         name: "Akim Snake App",
         short_name: "Akim Snake App",
         description: "A Simple Snake Game Application using MERN stack",
-        theme_color: "#242842",
-        background_color: "#242842",
+        theme_color: "#ece9fa",
+        background_color: "#ece9fa",
         display: "standalone",
         start_url: "/",
         icons: [
           {
-            src: "192_akimsnake.png",
+            src: "192_akimsnake_logo.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "512_akimsnake.png",
+            src: "512_akimsnake_logo.png",
             sizes: "512x512",
             type: "image/png",
           },

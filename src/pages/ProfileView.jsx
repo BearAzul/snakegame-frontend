@@ -28,8 +28,9 @@ const ProfileView = () => {
   }, [getBestScore])
 
   return (
-    <div className="h-screen mt-6 mx-6">
-      <div className="max-w-md mx-auto p-4 bg-base-300 rounded-2xl shadow-lg">
+    <section className="h-screen pt-20 bg-base-300">
+    <div className="mt-6 mx-6">
+      <div className="max-w-md mx-auto p-4 bg-base-200 rounded-2xl shadow-lg">
 
         <h1 className="text-2xl text-center mb-4 p-3 font-semibold">Card Profile</h1>
 
@@ -62,7 +63,8 @@ const ProfileView = () => {
 
       </div>
 
-    </div>
+      </div>
+    </section>
   )
 }
 

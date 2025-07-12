@@ -10,8 +10,8 @@ const LeaderboardView = () => {
   }, [getLeaderboard]);
 
   return (
-    <section className="min-h-screen">
-      <div className="container mx-auto p-4 md:p-8">
+    <section className="h-screen pt-20 lg:pt-12 bg-base-300">
+      <div className="container mx-auto p-6 md:p-8">
         <h1 className="text-xl font-bold mb-6 flex items-center gap-2">
           <Trophy className="text-yellow-400" />
           Papan Skor
@@ -30,7 +30,7 @@ const LeaderboardView = () => {
         )}
 
         {!isLeaderboardLoading && leaderboard.length > 0 && (
-          <div className="overflow-x-auto bg-base-300 rounded-lg">
+          <div className="overflow-x-auto bg-base-100 rounded-lg">
             <table className="table">
               <thead>
                 <tr>
@@ -42,7 +42,7 @@ const LeaderboardView = () => {
               <tbody>
                 {leaderboard.map((entry, index) => (
                   <tr key={entry._id} className="hover">
-                    <th>{index + 1}</th>
+                    <th className="text-center">{index + 1}</th>
                     <td>
                       <div className="flex items-center gap-3">
                         <div className="avatar hidden sm:block">
